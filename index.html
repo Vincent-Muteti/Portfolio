@@ -53,11 +53,16 @@
 
     <div class="projects-grid">
 
+      <!-- 1) Insurance Risk Classification -->
       <div class="card">
         <h3>Insurance Risk Classification</h3>
         <p>
-          Machine learning classification project focused on predicting insurance risk levels
-          to support smarter underwriting and decision-making.
+          Health insurance providers face rising medical costs driven by a subset of high-risk policyholders who
+          require frequent and costly healthcare services. Currently, identifying these individuals early remains
+          a challenge, leading to inefficient cost management and reactive care strategies. This project aims to
+          develop a classification model that predicts whether an insured individual is high-risk using demographic,
+          medical, lifestyle, and insurance data. Accurate identification of high-risk individuals will enable the
+          insurer to implement proactive interventions, improve resource allocation, and reduce overall healthcare costs.
         </p>
 
         <div class="tags">
@@ -73,54 +78,14 @@
         </div>
       </div>
 
-      <div class="card">
-        <h3>Movie Data Analysis</h3>
-        <p>
-          Exploratory data analysis project uncovering trends and patterns in movie datasets
-          to generate insights for better decision-making.
-        </p>
-
-        <div class="tags">
-          <span>Python</span>
-          <span>SQL</span>
-          <span>EDA</span>
-        </div>
-
-        <div class="card-actions">
-          <a class="link-btn" href="https://github.com/Vincent-Muteti/MOVIE-DATA-ANALYSIS" target="_blank">
-            View on GitHub →
-          </a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Aviation Accident Analysis</h3>
-        <p>
-          Data analysis project exploring aviation accident records to identify risk patterns
-          and support safety-focused recommendations.
-        </p>
-
-        <div class="tags">
-          <span>Python</span>
-          <span>Analytics</span>
-          <span>Insights</span>
-        </div>
-
-        <div class="card-actions">
-          <a class="link-btn" href="https://github.com/Vincent-Muteti/Aviation-Accident-Analysis" target="_blank">
-            View on GitHub →
-          </a>
-        </div>
-      </div>
-
-      <!-- NEW PROJECT (MATCHES OTHERS) -->
+      <!-- 2) Hybrid Movie Recommendation System -->
       <div class="card">
         <h3>Hybrid Movie Recommendation System</h3>
         <p>
-          This project focuses on building a hybrid movie recommendation system that delivers
-          personalized movie suggestions using historical user–movie interactions and content-based
-          similarities. By combining collaborative filtering and content-based techniques, the system
-          improves recommendation accuracy while addressing challenges such as the cold-start problem.
+          This project focuses on building a hybrid movie recommendation system that delivers personalized movie
+          suggestions using historical user–movie interactions and content-based similarities. By combining collaborative
+          filtering and content-based techniques, the system improves recommendation accuracy while addressing challenges
+          such as the cold-start problem.
         </p>
 
         <div class="tags">
@@ -132,6 +97,51 @@
 
         <div class="card-actions">
           <a class="link-btn" href="https://github.com/Vincent-Muteti/A-Hybrid-Movie-Recommendation-System-using-Machine-Learning" target="_blank">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+
+      <!-- 3) Aviation Accident Analysis -->
+      <div class="card">
+        <h3>Aviation Accident Analysis</h3>
+        <p>
+          This project analyzes historical aviation accident data to uncover patterns, trends, and insights. The goal of
+          this project is to apply data cleaning, visualization using Python and Tableau, dashboard creating in order to
+          support a data driven recommentations to the Head of Aviation Division on which Aircrafts to consider perchasing
+          and make strategic procurement decisions.
+        </p>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>Tableau</span>
+          <span>Analytics</span>
+        </div>
+
+        <div class="card-actions">
+          <a class="link-btn" href="https://github.com/Vincent-Muteti/Aviation-Accident-Analysis" target="_blank">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+
+      <!-- 4) Movie Data Analysis -->
+      <div class="card">
+        <h3>Movie Data Analysis</h3>
+        <p>
+          This project aims to analyze Movie Data to uncover insights about what of films perform best at the box office.
+          These findings will guide the company's new movie studio in decidimg which genres, ratings and characterists are
+          most likely to lead commercial success.
+        </p>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>EDA</span>
+        </div>
+
+        <div class="card-actions">
+          <a class="link-btn" href="https://github.com/Vincent-Muteti/MOVIE-DATA-ANALYSIS" target="_blank">
             View on GitHub →
           </a>
         </div>
@@ -202,9 +212,32 @@
     <h2>CONTACT</h2>
 
     <div class="contact-box">
-      <p>Email: <a href="mailto:vincentmuteti77@gmail.com">vincentmuteti77@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/vincent-muteti-401b2a280/" target="_blank">Vincent Muteti</a></p>
-      <p>GitHub: <a href="https://github.com/Vincent-Muteti" target="_blank">Vincent-Muteti</a></p>
+      <p>Feel free to reach out — I’ll respond as soon as possible.</p>
+
+      <form class="contact-form" action="https://formspree.io/f/xqeqrbqq" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="yourname@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+
+      <div class="contact-links">
+        <p><strong>Email:</strong> <a href="mailto:vincentmuteti77@gmail.com">vincentmuteti77@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vincent-muteti-401b2a280/" target="_blank">vincent-muteti</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Vincent-Muteti" target="_blank">Vincent-Muteti</a></p>
+      </div>
     </div>
   </section>
 
@@ -213,7 +246,9 @@
     <p>© <span id="year"></span> Vincent Muteti</p>
   </footer>
 
-  <button id="scrollTopBtn">↑</button>
+  <!-- SCROLL TO TOP -->
+  <button id="scrollTopBtn" title="Back to top">↑</button>
+
   <script src="script.js"></script>
 </body>
 </html>
