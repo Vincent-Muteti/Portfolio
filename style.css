@@ -1517,3 +1517,67 @@ img {
         max-width: 100%;
     }
 }
+
+
+/* =========================================
+   FINAL HERO BACKGROUND POSITIONING
+========================================= */
+
+.hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 13, 24, 0.99) 0%,
+            rgba(8, 13, 24, 0.93) 30%,
+            rgba(8, 13, 24, 0.76) 47%,
+            rgba(8, 13, 24, 0.38) 70%,
+            rgba(8, 13, 24, 0.18) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(8, 13, 24, 0.65) 0%,
+            transparent 55%
+        ),
+        url("assets/vincent.jpg");
+
+    background-size: cover;
+    background-position: 45% 35%;
+    background-repeat: no-repeat;
+}
+
+/* Keep the text readable */
+.hero-content {
+    max-width: 610px;
+    position: relative;
+    z-index: 3;
+}
+
+/* Keep the portrait visible */
+.hero::after {
+    background: radial-gradient(
+        circle at 78% 40%,
+        rgba(57, 136, 245, 0.08),
+        transparent 40%
+    );
+}
+
+/* Mobile adjustment */
+@media (max-width: 760px) {
+    .hero {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(8, 13, 24, 0.94),
+                rgba(8, 13, 24, 0.55)
+            ),
+            linear-gradient(
+                0deg,
+                rgba(8, 13, 24, 0.9),
+                transparent 75%
+            ),
+            url("assets/vincent.jpg");
+
+        background-size: cover;
+        background-position: 55% 30%;
+    }
+}
