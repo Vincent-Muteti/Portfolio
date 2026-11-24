@@ -1347,3 +1347,109 @@ img {
         animation-iteration-count: 1 !important;
     }
 }
+
+/* =========================================
+   HERO REDESIGN — FULL BACKGROUND PORTRAIT
+========================================= */
+
+.hero {
+    position: relative;
+    min-height: calc(100vh - 78px);
+    min-height: calc(100svh - 78px);
+
+    padding: 100px 6%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 13, 24, 0.98) 0%,
+            rgba(8, 13, 24, 0.92) 35%,
+            rgba(8, 13, 24, 0.62) 65%,
+            rgba(8, 13, 24, 0.35) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(8, 13, 24, 0.85),
+            transparent 45%
+        ),
+        url("assets/vincent.jpg");
+
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-content {
+    max-width: 650px;
+    position: relative;
+    z-index: 3;
+}
+
+.hero-image-wrapper {
+    display: none;
+}
+
+.hero-bottom {
+    z-index: 3;
+}
+
+/* Add a subtle blue glow to the background */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background: radial-gradient(
+        circle at 85% 45%,
+        rgba(57, 136, 245, 0.12),
+        transparent 38%
+    );
+}
+
+/* Mobile background treatment */
+@media (max-width: 760px) {
+    .hero {
+        min-height: 720px;
+        padding: 75px 6% 95px;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(8, 13, 24, 0.93),
+                rgba(8, 13, 24, 0.72)
+            ),
+            linear-gradient(
+                0deg,
+                rgba(8, 13, 24, 0.95),
+                transparent 80%
+            ),
+            url("assets/vincent.jpg");
+
+        background-size: cover;
+        background-position: center 30%;
+    }
+
+    .hero-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+}
