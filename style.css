@@ -1453,3 +1453,67 @@ img {
         max-width: 100%;
     }
 }
+
+/* =========================================
+   HERO FINAL VISUAL REFINEMENTS
+========================================= */
+
+.hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 13, 24, 0.99) 0%,
+            rgba(8, 13, 24, 0.94) 32%,
+            rgba(8, 13, 24, 0.76) 53%,
+            rgba(8, 13, 24, 0.38) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(8, 13, 24, 0.65),
+            transparent 45%
+        ),
+        url("assets/vincent.jpg");
+
+    background-size: cover;
+    background-position: 65% 35%;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 610px;
+}
+
+.hero-role {
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.hero-description {
+    max-width: 560px;
+    line-height: 1.9;
+}
+
+/* Mobile refinement */
+@media (max-width: 760px) {
+    .hero {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(8, 13, 24, 0.94),
+                rgba(8, 13, 24, 0.68)
+            ),
+            linear-gradient(
+                0deg,
+                rgba(8, 13, 24, 0.9),
+                transparent 80%
+            ),
+            url("assets/vincent.jpg");
+
+        background-size: cover;
+        background-position: 65% 30%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+}
